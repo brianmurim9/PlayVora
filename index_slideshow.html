@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<!--prettyPhoto css-->
 	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+	<!-- flexslider CSS -->
+	<link rel="stylesheet" href="assets/css/flexslider.css">
 	<!-- animate CSS -->
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<!-- Slick css -->
@@ -117,11 +119,10 @@
 	<!-- END NAVBAR-->
 
 	<!-- START HOME -->
-	<section id="home" class="home_bg"
-		style="background-image: url(assets/img/bg/home-bg.jpg);  background-size:cover; background-position: center center;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1 col-sm-12 col-xs-12 text-center">
+	<section id="home" class="home-area">
+		<div id="home-slider" class="flexslider text-center loading">
+			<ul class="slides">
+				<li style="background: url('assets/img/bg/slide1.jpg') no-repeat center center;">
 					<div class="hero-text">
 						<h2>Best Real state deals</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum justo vitae
@@ -133,11 +134,37 @@
 								data-wow-delay=".8s">our Listing</a>
 						</div>
 					</div>
-				</div><!--- END COL -->
-			</div><!--- END ROW -->
-		</div><!--- END CONTAINER -->
+				</li>
+				<li style="background: url('assets/img/bg/slide2.jpg') no-repeat center center;">
+					<div class="hero-text">
+						<h2>Best Real state deals</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum justo vitae
+							convallis varius. Nulla tristique risus ut justo pulvinar mattis.</p>
+						<div class="home_btn">
+							<a href="about.html" class="app-btn wow bounceIn page-scroll home_btn_color_one"
+								data-wow-delay=".6s">About us</a>
+							<a href="gallery.html" class="app-btn wow bounceIn page-scroll home_btn_color_two"
+								data-wow-delay=".8s">our Listing</a>
+						</div>
+					</div>
+				</li>
+				<li style="background: url('assets/img/bg/slide3.jpg') no-repeat center center;">
+					<div class="hero-text">
+						<h2>Best Real state deals</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum justo vitae
+							convallis varius. Nulla tristique risus ut justo pulvinar mattis.</p>
+						<div class="home_btn">
+							<a href="about.html" class="app-btn wow bounceIn page-scroll home_btn_color_one"
+								data-wow-delay=".6s">About us</a>
+							<a href="gallery.html" class="app-btn wow bounceIn page-scroll home_btn_color_two"
+								data-wow-delay=".8s">our Listing</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</section>
-	<!-- END  HOME -->
+	<!-- END  HOME DESIGN -->
 
 	<!-- START SEARCH -->
 	<div class="search_bar section-padding">
@@ -740,7 +767,7 @@
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-md-12 text-center">
 					<div class="footer_social">
 						<ul>
 							<li><a data-toggle="tooltip" data-placement="top" title="Facebook" href="#"><i
@@ -766,7 +793,7 @@
 				</div>
 			</div>
 			<div class="row footer-padding">
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Contact Us</h4>
 						<div class="footer_contact">
@@ -780,7 +807,7 @@
 						</div>
 					</div>
 				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Customer service</h4>
 						<div class="footer_contact">
@@ -794,7 +821,7 @@
 						</div>
 					</div>
 				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Helpful Link</h4>
 						<div class="footer_contact">
@@ -808,7 +835,7 @@
 						</div>
 					</div>
 				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Why choose Us</h4>
 						<div class="footer_contact">
@@ -824,7 +851,7 @@
 				</div><!--- END COL -->
 			</div><!--- END ROW -->
 			<div class="row text-center">
-				<div class="col-lg-12 col-sm-12 col-xs-12 wow zoomIn">
+				<div class="col-md-12 col-sm-12 col-xs-12 wow zoomIn">
 					<p class="footer_copyright">Hilux &copy; 2026 All Rights Reserved. Distributed by <a
 							href="https://themewagon.com" target="_blank">ThemeWagon</a></p>.
 				</div><!--- END COL -->
@@ -858,6 +885,14 @@
 	<script src="assets/js/scrolltopcontrol.js"></script>
 	<!-- WOW - Reveal Animations When You Scroll -->
 	<script src="assets/js/wow.min.js"></script>
+	<!-- flexslider js -->
+	<script src="assets/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+		jQuery("#home-slider").flexslider({
+			directionNav: false,
+			controlnav: true,
+		});
+	</script>
 	<!-- scripts js -->
 	<script src="assets/js/scripts.js"></script>
 </body>

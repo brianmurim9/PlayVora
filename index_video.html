@@ -26,6 +26,8 @@
 	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
 	<!-- animate CSS -->
 	<link rel="stylesheet" href="assets/css/animate.css">
+	<!--ytp player-->
+	<link rel="stylesheet" href="assets/css/YTPlayer.css">
 	<!-- Slick css -->
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<!-- Style CSS -->
@@ -118,7 +120,9 @@
 
 	<!-- START HOME -->
 	<section id="home" class="home_bg"
-		style="background-image: url(assets/img/bg/home-bg.jpg);  background-size:cover; background-position: center center;">
+		style="background-image: url(assets/img/bg/youtube-bg.jpg);  background-size:cover; background-position: center center;">
+		<a class="player"
+			data-property="{videoURL:'https://youtu.be/668nUCeBHyY',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 offset-lg-1 col-sm-12 col-xs-12 text-center">
@@ -740,7 +744,7 @@
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-md-12 text-center">
 					<div class="footer_social">
 						<ul>
 							<li><a data-toggle="tooltip" data-placement="top" title="Facebook" href="#"><i
@@ -766,7 +770,7 @@
 				</div>
 			</div>
 			<div class="row footer-padding">
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Contact Us</h4>
 						<div class="footer_contact">
@@ -780,7 +784,7 @@
 						</div>
 					</div>
 				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Customer service</h4>
 						<div class="footer_contact">
@@ -794,7 +798,7 @@
 						</div>
 					</div>
 				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Helpful Link</h4>
 						<div class="footer_contact">
@@ -808,7 +812,7 @@
 						</div>
 					</div>
 				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="single_footer">
 						<h4>Why choose Us</h4>
 						<div class="footer_contact">
@@ -824,7 +828,7 @@
 				</div><!--- END COL -->
 			</div><!--- END ROW -->
 			<div class="row text-center">
-				<div class="col-lg-12 col-sm-12 col-xs-12 wow zoomIn">
+				<div class="col-md-12 col-sm-12 col-xs-12 wow zoomIn">
 					<p class="footer_copyright">Hilux &copy; 2026 All Rights Reserved. Distributed by <a
 							href="https://themewagon.com" target="_blank">ThemeWagon</a></p>.
 				</div><!--- END COL -->
@@ -858,6 +862,11 @@
 	<script src="assets/js/scrolltopcontrol.js"></script>
 	<!-- WOW - Reveal Animations When You Scroll -->
 	<script src="assets/js/wow.min.js"></script>
+	<!-- video scripts -->
+	<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+	<script type="text/javascript">
+		$('.player').mb_YTPlayer();
+	</script>
 	<!-- scripts js -->
 	<script src="assets/js/scripts.js"></script>
 </body>
